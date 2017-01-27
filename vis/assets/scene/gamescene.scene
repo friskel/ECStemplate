@@ -26,13 +26,21 @@
     {
       "name": "ground",
       "id": 1,
+      "locked": true,
+      "visible": true,
+      "cordsSystem": "WORLD",
+      "@class": "EditorLayer"
+    },
+    {
+      "name": "guy",
+      "id": 2,
       "locked": false,
       "visible": true,
       "cordsSystem": "WORLD",
       "@class": "EditorLayer"
     }
   ],
-  "activeLayerId": 1,
+  "activeLayerId": 2,
   "groupIds": [],
   "schemes": [
     {
@@ -398,6 +406,153 @@
           "angularDamping": 0.0,
           "bullet": false,
           "fixedRotation": false,
+          "active": true,
+          "sleepingAllowed": true,
+          "adjustOrigin": true,
+          "maskBits": -1,
+          "categoryBits": 1,
+          "@class": "PhysicsProperties"
+        }
+      ],
+      "@class": "EntityScheme"
+    },
+    {
+      "components": [
+        {
+          "x": 3.1037946,
+          "y": 2.0640876,
+          "scaleX": 1.0,
+          "scaleY": 1.0,
+          "rotation": 0.0,
+          "@class": "Transform"
+        },
+        {
+          "originX": 0.79,
+          "originY": 1.265,
+          "@class": "Origin"
+        },
+        {
+          "tint": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "@class": "Tint"
+        },
+        {
+          "asset": {
+            "relativePath": "gfx/guy1.png",
+            "@class": "TextureRegionAsset"
+          },
+          "@class": "AssetReference"
+        },
+        {
+          "flipX": false,
+          "flipY": false,
+          "width": 1.58,
+          "height": 2.53,
+          "@class": "ProtoVisSprite"
+        },
+        {
+          "layerId": 2,
+          "@class": "Layer"
+        },
+        {
+          "uuid": "22f5f2ac-80c1-4f4c-b99c-13cfca59cf86",
+          "@class": "VisUUID"
+        },
+        {
+          "zIndex": 0,
+          "@class": "Renderable"
+        },
+        {
+          "vertices": [
+            {
+              "x": 3.2192166,
+              "y": 3.2959228,
+              "@class": "com.badlogic.gdx.math.Vector2"
+            },
+            {
+              "x": 3.2081575,
+              "y": 2.908851,
+              "@class": "com.badlogic.gdx.math.Vector2"
+            },
+            {
+              "x": 3.640163,
+              "y": 2.1293185,
+              "@class": "com.badlogic.gdx.math.Vector2"
+            },
+            {
+              "x": 4.384096,
+              "y": 2.1405902,
+              "@class": "com.badlogic.gdx.math.Vector2"
+            },
+            {
+              "x": 4.336196,
+              "y": 3.948416,
+              "@class": "com.badlogic.gdx.math.Vector2"
+            },
+            {
+              "x": 4.1592484,
+              "y": 4.556672,
+              "@class": "com.badlogic.gdx.math.Vector2"
+            },
+            {
+              "x": 3.5399334,
+              "y": 4.523494,
+              "@class": "com.badlogic.gdx.math.Vector2"
+            }
+          ],
+          "faces": [
+            [
+              {
+                "x": 3.5399334,
+                "y": 4.523494
+              },
+              {
+                "x": 3.2192166,
+                "y": 3.2959228
+              },
+              {
+                "x": 3.2081575,
+                "y": 2.908851
+              },
+              {
+                "x": 3.640163,
+                "y": 2.1293185
+              },
+              {
+                "x": 4.384096,
+                "y": 2.1405902
+              },
+              {
+                "x": 4.336196,
+                "y": 3.948416
+              },
+              {
+                "x": 4.1592484,
+                "y": 4.556672
+              }
+            ]
+          ],
+          "@class": "VisPolygon"
+        },
+        {
+          "id": "guy",
+          "@class": "VisID"
+        },
+        {
+          "bodyType": "DynamicBody",
+          "friction": 1.0,
+          "density": 1.0,
+          "restitution": 0.0,
+          "sensor": false,
+          "gravityScale": 1.0,
+          "linearDamping": 0.0,
+          "angularDamping": 0.0,
+          "bullet": false,
+          "fixedRotation": true,
           "active": true,
           "sleepingAllowed": true,
           "adjustOrigin": true,

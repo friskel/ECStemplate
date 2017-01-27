@@ -25,3 +25,10 @@ gfx/ground1
   orig: 800, 136
   offset: 0, 0
   index: -1
+gfx/guy1
+  rotate: false
+  xy: 1062, 91
+  size: 158, 253
+  orig: 158, 253
+  offset: 0, 0
+  index: -1
